@@ -11,7 +11,7 @@ class Kvirtbp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc3/kvirtbp_0.1.0-rc3_darwin_amd64.tar.gz"
-      sha256 "de002320ff03b02c9add69c8cf00a1bd67abee36385c35a617b11d14ac7f7c5f"
+      sha256 "2230deb5409d9860b78125bd4ce0dfbd3b371d01a7b9e9977e8f4333826cc5bf"
 
       define_method(:install) do
         bin.install "kvirtbp"
@@ -19,7 +19,7 @@ class Kvirtbp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc3/kvirtbp_0.1.0-rc3_darwin_arm64.tar.gz"
-      sha256 "6e3367dc9259c789a4b39f9afc02f0c694a93675ad7bbf788a30b7704131bbe8"
+      sha256 "93a0d0a14d6e5a7ed9f1a3e8a9cebcb54cc5cd2fb41bc77ad253384823c2cfe1"
 
       define_method(:install) do
         bin.install "kvirtbp"
@@ -30,14 +30,14 @@ class Kvirtbp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc3/kvirtbp_0.1.0-rc3_linux_amd64.tar.gz"
-      sha256 "422bcbe16fa515e3259655ad0fa618b6b2313623df72fad19b896bf1120c8d1c"
+      sha256 "636d61af9ddc2d3130ad095f5015de0d207e08ae504a19a47f9cc54dea8b15a7"
       define_method(:install) do
         bin.install "kvirtbp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc3/kvirtbp_0.1.0-rc3_linux_arm64.tar.gz"
-      sha256 "88f670b3c4255dcb48630a7e6476c1edc281881b38adeeef9c51ddec93fa1cba"
+      sha256 "37ba12e1c19a8f219ddb517f9a99ecfefb91d0c1a9498b512de5378168b2635b"
       define_method(:install) do
         bin.install "kvirtbp"
       end
