@@ -5,21 +5,21 @@
 class Kvirtbp < Formula
   desc "KubeVirt best-practices scanner for production readiness, security, and availability checks"
   homepage "https://github.com/phenixblue/kvirtbp"
-  version "0.1.0-rc3"
+  version "0.1.0-rc4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc3/kvirtbp_0.1.0-rc3_darwin_amd64.tar.gz"
-      sha256 "2230deb5409d9860b78125bd4ce0dfbd3b371d01a7b9e9977e8f4333826cc5bf"
+      url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc4/kvirtbp_0.1.0-rc4_darwin_amd64.tar.gz"
+      sha256 "9c7729fc8db144ef946aa85c5aff73784c254dee5f165518e110f66f24ad69ce"
 
       define_method(:install) do
         bin.install "kvirtbp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc3/kvirtbp_0.1.0-rc3_darwin_arm64.tar.gz"
-      sha256 "93a0d0a14d6e5a7ed9f1a3e8a9cebcb54cc5cd2fb41bc77ad253384823c2cfe1"
+      url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc4/kvirtbp_0.1.0-rc4_darwin_arm64.tar.gz"
+      sha256 "c5f93f04e4201a4bb0c4d3db70dcb9de08980a0ec98dcc06512ccd10d8050185"
 
       define_method(:install) do
         bin.install "kvirtbp"
@@ -29,15 +29,15 @@ class Kvirtbp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc3/kvirtbp_0.1.0-rc3_linux_amd64.tar.gz"
-      sha256 "636d61af9ddc2d3130ad095f5015de0d207e08ae504a19a47f9cc54dea8b15a7"
+      url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc4/kvirtbp_0.1.0-rc4_linux_amd64.tar.gz"
+      sha256 "9f2c30adbaff86e716b342558ae26902d9f905d73e45b7eddd64c96e93981d6b"
       define_method(:install) do
         bin.install "kvirtbp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc3/kvirtbp_0.1.0-rc3_linux_arm64.tar.gz"
-      sha256 "37ba12e1c19a8f219ddb517f9a99ecfefb91d0c1a9498b512de5378168b2635b"
+      url "https://github.com/phenixblue/kvirtbp/releases/download/v0.1.0-rc4/kvirtbp_0.1.0-rc4_linux_arm64.tar.gz"
+      sha256 "a30b5ebcb09b6d8c134854c7138aa93f471b0e4cb435356a986a1d4246aca19c"
       define_method(:install) do
         bin.install "kvirtbp"
       end
