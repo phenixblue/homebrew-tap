@@ -5,21 +5,21 @@
 class K8shark < Formula
   desc "Kubernetes cluster state capture and mock API replay tool"
   homepage "https://github.com/phenixblue/k8shark"
-  version "0.1.0-rc.1"
+  version "0.1.0-rc.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/phenixblue/k8shark/releases/download/v0.1.0-rc.1/k8shark_0.1.0-rc.1_darwin_amd64.tar.gz"
-      sha256 "08707020534aa1df1802ae711a55caced15ac1e3714f7901ca3a47d7aa9023fd"
+      url "https://github.com/phenixblue/k8shark/releases/download/v0.1.0-rc.2/k8shark_0.1.0-rc.2_darwin_amd64.tar.gz"
+      sha256 "cca3530b96f82795f7197986ddf86feed4e62bd6a507b6eb33a9a1a260f94df2"
 
       define_method(:install) do
         bin.install "kshrk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/phenixblue/k8shark/releases/download/v0.1.0-rc.1/k8shark_0.1.0-rc.1_darwin_arm64.tar.gz"
-      sha256 "3202aa9a9991c499ffc97a86a46b625036cdedb0a182dd5a3b8f03de55a441dd"
+      url "https://github.com/phenixblue/k8shark/releases/download/v0.1.0-rc.2/k8shark_0.1.0-rc.2_darwin_arm64.tar.gz"
+      sha256 "570e82cf751925a824936cca79397a7f933ea78a8dcef7d76bd128e9644791f0"
 
       define_method(:install) do
         bin.install "kshrk"
@@ -29,15 +29,15 @@ class K8shark < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phenixblue/k8shark/releases/download/v0.1.0-rc.1/k8shark_0.1.0-rc.1_linux_amd64.tar.gz"
-      sha256 "4c5c80e6c966b1c621e9f71121348cd12bfe173f4b87eb32d341f873f7c6ecd5"
+      url "https://github.com/phenixblue/k8shark/releases/download/v0.1.0-rc.2/k8shark_0.1.0-rc.2_linux_amd64.tar.gz"
+      sha256 "55d0f28a6762dbac4c5acd317f457b9b44ff60f1059a0e0a490aa204122e8d5c"
       define_method(:install) do
         bin.install "kshrk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phenixblue/k8shark/releases/download/v0.1.0-rc.1/k8shark_0.1.0-rc.1_linux_arm64.tar.gz"
-      sha256 "39aae0c1a048ad98fe5b3569ad5fc3edff54009e55db89e0098c614e292c2115"
+      url "https://github.com/phenixblue/k8shark/releases/download/v0.1.0-rc.2/k8shark_0.1.0-rc.2_linux_arm64.tar.gz"
+      sha256 "eaafc9c7ce4a1b36ec4d003e42229b52db08a41ad9e03b7f33d3de1ca189530f"
       define_method(:install) do
         bin.install "kshrk"
       end
